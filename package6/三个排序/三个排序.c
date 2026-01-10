@@ -5,6 +5,12 @@ void selectionSort(int arr[], int n);
 
 void insertionSort(int arr[], int n);
 
+void PrintArray(int arr[], int n);
+
+int cmp(const void *a, const void *b) {
+    return (*(int*)a - *(int*)b);
+}
+
 int main( ){
     int n;
     scanf("%d",&n);
@@ -12,7 +18,8 @@ int main( ){
     for(int i=0;i<n;i++) {
         scanf("%d",&arr[i]);
     }
-    insertionSort(arr,n);
+    qsort(arr,n,sizeof(int),cmp);
+    PrintArray(arr,n);
 }
 /*
 6
@@ -58,6 +65,12 @@ void insertionSort(int arr[], int n) {
         }
         arr[j+1] = temp;
     }
+    for(int i=0;i<n;i++) {
+        printf("%d ",arr[i]);
+    }
+}
+
+void PrintArray(int arr[], int n) {
     for(int i=0;i<n;i++) {
         printf("%d ",arr[i]);
     }

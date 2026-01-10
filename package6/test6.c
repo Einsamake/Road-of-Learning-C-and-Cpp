@@ -1,25 +1,42 @@
 #include <stdio.h>
-#include <stdlib.h>
+void print_spiral(int length,int width) {
+    int arr[width][length],num=0;
+    int l=length,w=width;int start=0;
+    while (length>0&&width>0) {
 
-int main( ){
-    int n,k;
-    scanf("%d %d",&n,&k);
-    int arr[n];
-    for(int i=1;i<n+1;i++) {
-        arr[i-1]=i;
+        for (int i = start; i < length; i++) {
+            arr[start][i] = num;
+        }
+        num++;
+        if (start+1==width)break;
+        for (int i = start+1; i < width; i++) {
+            arr[i][length-1] = num;
+        }
+        num++;
+        for (int i = length-2; i >= start; i--) {
+            arr[width-1][i] = num;
+        }
+        num++;
+        if (width-2==start)break;
+        for (int i = width-2; i > start; i--) {
+            arr[i][start] = num;
+        }
+        num++;
+        length--;
+        width--;
+        start++;
     }
-    int person=0,cur=0,live=n;
-    while(live>0) {
-        if (arr[person]>0) {
-            cur++;
+    for (int i = 0; i < w; i++) {
+        for (int j = 0; j < l; j++) {
+            printf("%d",arr[i][j]);
         }
-        if(cur==k&&arr[person]>0) {
-            printf("%d\n",arr[person]);
-            arr[person]=-1;
-            cur=0;
-            live--;
-        }
-        person++;
-        person%=n;
+        printf("\n");
     }
 }
+
+int main( ){
+    int length,width;
+    scanf("%d%d",&length,&width);
+    print_spiral(length,width);
+}
+
