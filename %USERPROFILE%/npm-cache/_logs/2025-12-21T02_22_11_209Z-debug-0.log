@@ -1,0 +1,17 @@
+0 verbose cli D:\Program Files\nodejs\node.exe D:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.3
+2 info using node@v22.20.0
+3 silly config load:file:D:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\Lenovo\.npmrc
+5 silly config load:file:C:\Users\Lenovo\Desktop\Project\DevProject\%USERPROFILE%\npm\etc\npmrc
+6 verbose title npm config list
+7 verbose argv "config" "list" "--json"
+8 verbose logfile logs-max:10 dir:C:\Users\Lenovo\Desktop\Project\DevProject\%USERPROFILE%\npm-cache\_logs\2025-12-21T02_22_11_209Z-
+9 verbose logfile C:\Users\Lenovo\Desktop\Project\DevProject\%USERPROFILE%\npm-cache\_logs\2025-12-21T02_22_11_209Z-debug-0.log
+10 silly logfile done cleaning log files
+11 verbose cwd C:\Users\Lenovo\Desktop\Project\DevProject
+12 verbose os Windows_NT 10.0.26200
+13 verbose node v22.20.0
+14 verbose npm  v10.9.3
+15 verbose exit 0
+16 info ok

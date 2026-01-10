@@ -1,0 +1,20 @@
+0 verbose cli D:\Program Files\nodejs\node.exe D:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.3
+2 info using node@v22.20.0
+3 silly config load:file:D:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\Lenovo\.npmrc
+5 silly config load:file:C:\Users\Lenovo\Desktop\Project\DevProject\%USERPROFILE%\npm\etc\npmrc
+6 verbose title npm search @web-types
+7 verbose argv "search" "--json" "@web-types"
+8 verbose logfile logs-max:10 dir:C:\Users\Lenovo\Desktop\Project\DevProject\%USERPROFILE%\npm-cache\_logs\2025-12-21T02_22_19_450Z-
+9 verbose logfile C:\Users\Lenovo\Desktop\Project\DevProject\%USERPROFILE%\npm-cache\_logs\2025-12-21T02_22_19_450Z-debug-0.log
+10 silly logfile done cleaning log files
+11 silly search searching packages
+12 http fetch GET 200 https://registry.npmmirror.com/-/v1/search?text=%40web-types&size=20&from=0&quality=0.65&popularity=0.98&maintenance=0.5 192ms (cache miss)
+13 silly search search completed
+14 verbose cwd C:\Users\Lenovo\Desktop\Project\DevProject
+15 verbose os Windows_NT 10.0.26200
+16 verbose node v22.20.0
+17 verbose npm  v10.9.3
+18 verbose exit 0
+19 info ok
