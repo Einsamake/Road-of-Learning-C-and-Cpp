@@ -50,11 +50,9 @@ int main() {
                 arr[k].printed = 1;
                 has_print++;
             }
-
             k++;
         }
     }
-
     if (has_print == 0) {
         printf("No such element.\n");
     }

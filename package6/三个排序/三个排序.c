@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 void bubbleSort(int arr[], int n);
 
 void selectionSort(int arr[], int n);
@@ -22,8 +24,8 @@ int main( ){
     PrintArray(arr,n);
 }
 /*
-6
-7 -3 43 0 1 23
+            6
+            7 -3 43 0 1 23
 */
 void bubbleSort(int arr[], int n) {
     for(int i=0;i<n-1;i++) {
@@ -35,9 +37,7 @@ void bubbleSort(int arr[], int n) {
             }
         }
     }
-    for(int i=0;i<n;i++) {
-        printf("%d ",arr[i]);
-    }
+
 }
 void selectionSort(int arr[], int n) {
     for(int i=0;i<n-1;i++) {
@@ -53,9 +53,6 @@ void selectionSort(int arr[], int n) {
             arr[minIndex] = temp;
         }
     }
-    for(int i=0;i<n;i++) {
-        printf("%d ",arr[i]);
-    }
 }
 void insertionSort(int arr[], int n) {
     for(int i=1,j;i<n;i++) {
@@ -64,9 +61,6 @@ void insertionSort(int arr[], int n) {
             arr[j+1] = arr[j];
         }
         arr[j+1] = temp;
-    }
-    for(int i=0;i<n;i++) {
-        printf("%d ",arr[i]);
     }
 }
 

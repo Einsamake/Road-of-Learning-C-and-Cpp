@@ -43,6 +43,4 @@ void find_yin(int arr[N] ,int num) {
             arr[k++]=num;
         }
     }
-}//
-// Created by Lenovo on 2026/1/9.
-//
+}
